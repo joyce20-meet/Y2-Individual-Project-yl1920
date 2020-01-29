@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>added_recipe</title>
+<link rel="stylesheet" type="text/css" href="/static/added_recipe.css">
+
+
+</head>
+<body style="border-top-style: solid;border-top-width: 0px;margin-top: 0px;margin-left: 0px">
+      <div class="topnav">
+      <a href="/">Home</a>
+      <a href="/recipe">Recipes</a>
+      <a href="/Specific_recipe">Specific Recipe</a>
+      <a class="active" href="/added_recipe">Add your own Recipe</a>
+      </div>
+
+      <!-- <form action="/added_recipe" method="post"> 
+      <input type="text" name="name" placeholder="Recipe Name">
+      <label for="comment">Recipe:</label>
+      <input type="textarea" name="recipe">
+      <br>
+      <input type="submit" value="Submit">-->
+
+      <form>
+      <input type="text" name="name" class="question" id="nme" required autocomplete="off" style="margin-top: 50px; margin-right: 50px; " />
+      <label for="nme"><span>What's your recipe name?</span></label>
+      <textarea name="recipe" rows="2" class="question" id="msg" required autocomplete="off"></textarea>
+      <label for="msg"><span>Add your Recipe</span></label>
+      <input type="submit" value="Submit!" />
+      </form>
+      
+</body>
+</html>

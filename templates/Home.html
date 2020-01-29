@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Home</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="/static/Home.css">
+	
+</head>
+<body>
+  <div class="topnav">
+  <a class="active" href="#/">Home</a>
+  <a href="/recipe">Recipes</a>
+  <a href="/Specific_recipe">Specific Recipe</a>
+  <a href="/added_recipe">Add your own recipe</a>
+  
+
+  </div> 
+
+  <div class="textbox"> 
+    <img src="/static/logo.jpeg" alt="logo" class="center">
+    <p>TEENCOOK is a website where teenagers can start cooking simple , easy meals instead of ordering unhealthy food, not only that but they can also share their own recipes</p>
+
+  </div>
+
+<div class="container">
+
+  <div class="row">
+    <div class="col-6">
+    {% for recipe in recipes%}
+      <div class="wrapper">
+  
+       <div class="header"></div>
+       <img src="{{recipe.photo}}" class="meal" width="390" height="390" >
+       <h1 class="name">{{recipe.name}}</h1>
+       <div class="border"></div>
+       <a href="/Specific_recipe/{{recipe.id}}"class="button">Read More</a>
+      </div>
+      {%endfor%}
+    </div>
+
+
+
+
+    </div>
+  </div>
+</div>
+    
+
+</body>
+</html>

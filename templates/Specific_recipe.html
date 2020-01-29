@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Specific_recipe</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="../static/specific_recipe.css">
+	<style type="text/css">
+		#Ingredient{
+			
+			width: 300px;
+			padding: 50px;
+			margin: 20px;
+			}
+<meta name="viewport" content="width=device-width, initial-scale="1">
+
+.container {
+  position: relative;
+  width: 50%;
+}
+
+.image {
+  display: block;
+  width: 400px;
+  height: 400px;
+ 
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+ }
+  
+
+.container:hover .overlay {
+  opacity: 1;
+}
+
+.text {
+
+  color: black;
+  font-size: 20px;
+  position: absolute;
+  top:50%;
+  right:50%;
+}
+
+ .description {
+    padding: 1rem;
+    background: white;
+    position: relative;
+    z-index: 1;
+}
+   
+    h1 {
+      line-height: 1;
+      margin: 0;
+      font-size: 1.7rem;
+    }
+    h2 {
+      font-size: 1rem;
+      font-weight: 300;
+      text-transform: uppercase;
+      color: grey;
+      margin-top: 5px;
+    }
+	</style>
+</head>
+
+
+
+    
+
+<body>
+	<div class="topnav">
+		<a href="/">Home</a>
+		<a href="/recipe">Recipes</a>
+		<a class="active" href="#/Specific_recipe">Specific Recipe</a>
+		<a href="/added_recipe">Add your own Recipe</a>
+  	</div>
+  
+ <div class="container"> 
+	<div class="row">
+		<div class="col-6 ">
+			<div class="recipe">
+				<div class="overlay">
+					<div class="text">{{name}}</div>
+				  	<img src="{{photo}}" alt="Recipe" class="image">
+	    		</div>
+	   		</div>
+	   	</div>
+
+	<div class="row">
+		<div class="col-6">
+			<div id="Ingredient">
+				{{Ingredients}}
+			</div>
+		</div>
+	</div>
+</div>
+ 
+<!-- 
+<div class="blog-card">
+	<div class="description">
+	      <h1>{{name}}</h1>
+	      <p> {{Ingredients}}</p>
+	</div>
+	<img src="{{photo}}" alt="Recipe" class="image">
+</div> -->
+</body>
+</html>
