@@ -10,7 +10,7 @@
   <div class="topnav">
    <a href="/">Home</a>
    <a class="active" href="#/recipe">Recipes</a>
-   <a href="/Specific_recipe">Specific Recipe</a>
+   <!-- <a href="/Specific_recipe">Specific Recipe</a> -->
    <a href="/added_recipe">Add your own Recipe</a>
 
   </div>
@@ -21,7 +21,8 @@
 
   var c = 0;
   function open_close(){
-  if(c % 2 == 0){    
+  if(c % 2 == 0){
+  for( elem in )    
      document.querySelector('.cont_modal').className = "cont_modal cont_modal_active";  
      c++;
   }else {
@@ -36,58 +37,7 @@
 <body>
 
 <div class="container">
-  <div class="row my-3">
-    <div class="col-3 mx-auto" style="height:auto">
-      <div class="cont_central">
-        <div class="cont_modal cont_modal_active">
-
-          <div class="cont_photo">
-            <div class="cont_img_back">
-              <img src="https://s-media-cache-ak0.pinimg.com/736x/57/98/9f/57989f2a2e186e38bf93429aa395120c.jpg" alt="" />
-            </div>
-            <div class="cont_detalles">
-              <h3>Shakshuka With Feta</h3>
-            </div>
-          </div>
-
-          <div class="cont_text_ingredients">
-            <div class="cont_over_hidden">
-       
-              <div class="cont_tabs">
-                <ul>
-                  <li><a href="#"><h4>PREPARATION</h4></a></li>
-                </ul>  
-              </div>
-       
-              <div class="cont_text_det_preparation">
-                <div class="cont_title_preparation">
-                  <p>Ingredents</p>
-                </div>
-                <div class="cont_info_preparation">
-                  <p>Onion-Egg-paprika-bell pepper-pepper-garlic-cumin</p>
-                </div>  
-
-
-                <div class="cont_text_det_preparation">
-                  <div class="cont_title_preparation">
-                    <p>STEPS</p>
-                  </div>
-                  <div class="cont_info_preparation">
-                    <p>Heat oil in a large skillet over medium-low head. Add onion and bell papper. Cook gently until very soft, about 20 minutes. Add garlic and cook until tender, 1 to 2 minutes; stir in cumin, paprika and cook 1 minute. Pour in tomatoes and season with 3/4 teaspoon salt and 1/4 teaspoon pepper;</p>
-                  </div> 
-                </div> 
-
-              </div>   
-            </div>  <!-- end text ingredients -->          
-          </div>
-          <div class="cont_btn_open_dets">
-            <a href="#e" onclick="open_close()"></a>
-          </div>
-
-        </div>
-      </div>
-    </div>
-  </div>
+  
 
   <div class="row my-3">
     <div class="col-12 mx-auto" style="height:auto">
@@ -96,10 +46,10 @@
 
           <div class="cont_photo">
             <div class="cont_img_back">
-              <img src="https://s-media-cache-ak0.pinimg.com/736x/57/98/9f/57989f2a2e186e38bf93429aa395120c.jpg" alt="" />
+              <img src="../static/macandcheese.jpg" alt="" />
             </div>
             <div class="cont_detalles">
-              <h3>Shakshuka With Feta</h3>
+              <h3>Mac and cheese </h3>
             </div>
           </div>
 
@@ -117,7 +67,7 @@
                   <p>Ingredents</p>
                 </div>
                 <div class="cont_info_preparation">
-                  <p>Onion-Egg-paprika-bell pepper-pepper-garlic-cumin</p>
+                  <p>Milk-Cheese-butter-macaroni-flour-salt</p>
                 </div>  
 
 
@@ -126,7 +76,7 @@
                     <p>STEPS</p>
                   </div>
                   <div class="cont_info_preparation">
-                    <p>Heat oil in a large skillet over medium-low head. Add onion and bell papper. Cook gently until very soft, about 20 minutes. Add garlic and cook until tender, 1 to 2 minutes; stir in cumin, paprika and cook 1 minute. Pour in tomatoes and season with 3/4 teaspoon salt and 1/4 teaspoon pepper</p>
+                    <p>Melt butter in a saucepan over medium heat; stir in flour, salt, and pepper until smooth, about 5 minutes. Slowly pour milk into butter-flour mixture while continuously stirring until mixture is smooth and bubbling, about 5 minutes. Add Cheddar cheese to milk mixture and stir until cheese is melted, 2 to 4 minutes.</p>
                   </div> 
                 </div> 
 
