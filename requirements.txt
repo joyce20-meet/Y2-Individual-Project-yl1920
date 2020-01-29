@@ -84,7 +84,7 @@ wcwidth==0.1.7
 webencodings==0.5
 Werkzeug==0.15.5
 WTForms==2.2.1
-Flask=1.0.2
+Flask==1.0.2
 SQLAlchemy==1.2.9
 itsdangerous==0.24
 Jinja2==2.10
