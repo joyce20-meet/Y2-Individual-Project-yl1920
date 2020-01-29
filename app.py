@@ -8,6 +8,8 @@ app.config['SECRET_KEY'] = 'super-secret-key'
 @app.route('/')
 def home():
 	recipes = allrecipes()
+	# delete_recipe=delete_recipe(id)
+
 	return render_template('Home.html',recipes=recipes)
 	
 @app.route('/recipe')
@@ -23,7 +25,6 @@ def Specific_recipe(id):
 	Ingredients=recipe.recipe
 	photo=recipe.photo
 
-	delete_recipe=delete_recipe(name)
 	return render_template('Specific_recipe.html', name = name, Ingredients=Ingredients, photo=photo)
 
 

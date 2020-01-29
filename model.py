@@ -21,3 +21,4 @@ class Recipe(Base):
 	name = Column(String)
 	recipe = Column(String)
 	photo= Column(String)
+	
