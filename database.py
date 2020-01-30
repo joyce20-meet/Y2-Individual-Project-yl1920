@@ -56,7 +56,7 @@ def delete_recipe(their_name):
    session.query(Recipe).filter_by(
        name=their_name).delete()
    session.commit()
-add_recipe("Pancakes","1 egg, 1 tsp butter, 1 cup milk, 1 tsp,1 cup flour, 1 tsp sugar ","/static/Pancake.jpg")
-add_recipe("Spanish Salad", "green apple, red onion, pine nuts, feta cheese", "/static/salad1.jpg")
+#dd_recipe("Pancakes","1 egg, 1 tsp butter, 1 cup milk, 1 tsp,1 cup flour, 1 tsp sugar ","/static/Pancake.jpg")
+#add_recipe("Spanish Salad", "green apple, red onion, pine nuts, feta cheese", "/static/salad1.jpg")
 #delete_recipe()
 print(len(allrecipes()))
